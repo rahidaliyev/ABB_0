@@ -63,6 +63,4 @@ for i in range(M):
     for j in range(N):
         print(screen[i][j], end = ' ')
     print()
-print(res) 
-# This code is contributed by Ashutosh450
-# Updated by Arun Pandey
+print(res)
