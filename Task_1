@@ -1,0 +1,29 @@
+import math
+from array import *
+
+
+def ParkingDilemma(cars, k):
+    cars.sort()
+    n = len(cars)
+
+    res = float('inf')
+    for i in range(n - k + 1):
+        res = min(res, cars[i + k - 1] - cars[i])
+    return res+1
+
+
+cars = [2, 10, 8, 17]
+k = 3
+p = ParkingDilemma(cars, k)
+print(p)
+
+
+
+
+
+
+
+
+
+
+
